@@ -1,0 +1,77 @@
+/* Forums.module.css */
+
+.forums {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 36px;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows items to wrap if screen is small */
+  margin-bottom: 20px;
+}
+
+.feature-item {
+  margin: 20px;
+  text-align: center;
+  max-width: 300px; /* Limits the width of each feature item */
+}
+
+.feature-img {
+  width: 100px; /* Smaller width */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  width: 100%;
+  font-size: 14px;
+}
+
+.gallery-section {
+  text-align: center;
+}
+
+.gallery-img {
+  width: 200px; /* Smaller width */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.gallery-text {
+  width: 100%;
+  font-size: 14px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}

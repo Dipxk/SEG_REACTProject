@@ -1,13 +1,257 @@
+/* index.css */
+
+/* General styling */
 body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Header styling */
+header {
+  background: #222;
+  padding: 1rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #ff0; /* Yellow text for navbar */
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Hero section */
+.hero {
+  padding: 2rem 0;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #ff69b4; /* Pinkish text */
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #ff69b4; /* Pinkish text */
+}
+
+.hero-description {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #ff69b4; /* Pinkish text */
+}
+
+.arcade-img img {
+  width: 80%;
+  max-width: 600px;
+  margin: 1rem 0;
+}
+
+/* Content sections */
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.fan-art, .recommendations, .product {
+  width: 45%;
+  background: #333;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.fan-art h3, .recommendations h3, .product h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.fan-art img, .recommendations img, .product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.recommendations p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.recommendations p:first-of-type {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ff69b4; /* Pinkish text */
+}
+
+.product p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.product button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Register page styling */
+.register {
+  padding: 2rem 0;
+}
+
+.register h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.register-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.register-form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.register-form label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.register-form button {
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.register-artwork {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.register-artwork img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Browse page styling */
+.browse {
+  padding: 2rem 0;
+}
+
+.browse h1 {
+  font-size: 2.5rem;
+  color: #ff69b4;
+}
+
+.browse-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.browse-filters {
+  width: 15%;
+  text-align: left;
+}
+
+.browse-filters a {
+  display: block;
+  color: #ff0;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.browse-filters a:hover {
+  text-decoration: underline;
+}
+
+.browse-results {
+  width: 80%;
+}
+
+.browse-results img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.browse-results .product {
+  background: #333;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.browse-results .product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.browse-results .product h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.browse-results .product p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.browse-results .product button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
